@@ -1,0 +1,380 @@
+<html>
+<head>
+    <title>
+        Flower Shop
+    </title>
+    <meta charset="utf-8" />
+
+    <link rel="stylesheet" href="C:\Users\Anisha\Documents\FlowerShopAssignment\styles\StyleSheet.css" />
+    <script src="C:\Users\Anisha\Documents\FlowerShopAssignment\scripts\Validation.js"></script>
+</head>
+<body>
+    <div class="border">
+        <form id="form1" name="paymentForm">
+
+            <header>
+                <h1>FLOWER SHOP ONLINE</h1>
+            </header>
+
+            <div id="division">&nbsp;</div>
+            <div>
+                <img id="Rose" src="Images/Flower.png" />
+            </div>
+            <div class="payment">
+                <h2>Secure Payment Page</h2>
+
+
+                <table>
+                    <tr>
+                        <td class="column1">
+                            <label for="Select Language">Select Language</label>
+                        </td>
+                        <td class="tblcolumn2">
+
+                            <select id="language" name="Select Language" required>
+                                <option value="English">English</option>
+                                <option value="Tamil">Tamil</option>
+                                <option value="Hindi">Hindi</option>
+
+                            </select>
+                        </td>
+                        <td rowspan="4">
+                            <img id="visa" src="Images/Visa.jpg" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="column1">
+
+                            <label for="payment">Payment method</label>
+                        </td>
+                        <td class="tblcolumn2">
+                            <label for="visa"><b>Visa</b></label>
+
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="column1">
+
+                            <label for="description">Description</label>
+                        </td>
+                        <td class="tblcolumn2">
+                            <label for="item ordered"><b>Item Ordered</b></label>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="column1">
+
+                            <label for="amount">Amount</label>
+                        </td>
+                        <td class="tblcolumn2">
+                            <label for="amount"><b>&pound; 100.00</b></label>
+
+                        </td>
+                    </tr>
+                </table>
+                <div style="display: flex;">
+                    <div>
+                        <table class="details">
+
+
+                            <tr>
+                                <td colspan="2" class="title">Card details</td>
+
+
+                            </tr>
+                            <tr>
+                                <td colspan="2">You must fill in fields marked with *</td>
+                            </tr>
+
+                            <tr>
+                                <td class="column1">
+                                    <label>* Card Number</label>
+                                </td>
+                                <td class="column2">
+                                    <input class="longLen" type="text" id="CardNo" maxlength="19" required />
+                                    <label id="lblCardNo" style="display:none;color:red;">
+                                        Invalid Card Number
+                                    </label>
+                                    <label id="reqCardNo" style="display:none;color:red;">
+                                        Card Number Required
+                                    </label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="column1">
+
+                                    <label for="SecurityCode">*&nbsp;<u>Security Code</u></label>
+                                </td>
+                                <td class="column2">
+                                    <input type="text" id="SecurityCode" maxlength="4" />
+                                    <label id="lblSecurityCode" style="display:none;color:red;">
+                                        Invalid Security Code
+                                    </label>
+                                    <label id="reqSecurityCode" style="display:none;color:red;">
+                                        Security Code Required
+                                    </label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="column1">
+
+                                    <label for="expiry">* Expiry date</label>
+                                </td>
+                                <td class="column2">
+                                    <select name="month" required>
+                                        <option> </option>
+                                        <option value="1">01</option>
+                                        <option value="2">02</option>
+                                        <option value="3">03</option>
+                                        <option value="4">04</option>
+                                        <option value="5">05</option>
+                                        <option value="6">06</option>
+                                        <option value="7">07</option>
+                                        <option value="8">08</option>
+                                        <option value="9">09</option>
+                                        <option value="10">10</option>
+                                        <option value="11">11</option>
+                                        <option value="12">12</option>
+                                    </select>
+                                    <select name="year" required>
+                                        <option> </option>
+                                        <option value="2020">2020</option>
+                                        <option value="2021">2021</option>
+                                        <option value="2022">2022</option>
+                                        <option value="2023">2023</option>
+                                        <option value="2024">2024</option>
+                                        <option value="2025">2025</option>
+                                    </select>
+                                    <label id="lblexpiry" style="display:none;color:red;">
+                                        Please select an option
+                                    </label>
+                                </td>
+
+
+                            </tr>
+                            <tr>
+                                <td class="column1">
+
+                                    <label for="cardHolder">* Cardholder's name</label>
+                                </td>
+                                <td class="column2">
+                                    <input class="longLen" type="text" id="CardHolder" maxlength="30" required />
+                                    <label id="lblCardHolder" style="display:none;color:red;">
+                                        Invalid Card Holder
+                                    </label>
+                                    <label id="reqCardHolder" style="display:none;color:red;">
+                                        Card Holder Required
+                                    </label>
+                                </td>
+                            </tr>
+
+
+
+                            <tr>
+                                <td colspan="2" class="title">Cardholder Details</td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">You must fill in fields marked with *</td>
+                            </tr>
+
+                            <tr>
+                                <td class="column1">
+
+                                    <label for="address1">* Address 1</label>
+                                </td>
+                                <td class="column2">
+                                    <input class="longLen" type="text" id="address1" maxlength="254" required />
+                                    <label id="lbladdress1" style="display:none;color:red;">
+                                        Invalid Address
+                                    </label>
+                                    <label id="reqaddress1" style="display:none;color:red;">
+                                        Address Required
+                                    </label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="column1">
+
+                                    <label for="address2">&ensp; Address 2</label>
+                                </td>
+                                <td class="column2">
+                                    <input class="longLen" type="text" id="address2" maxlength="254"/>
+                                    <label id="lbladdress2" style="display:none;color:red;">
+                                        Invalid Address
+                                    </label>
+
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="column1">
+                                    <label for="address3">&ensp; Address 3</label>
+                                </td>
+                                <td class="column2">
+                                    <input class="longLen" type="text" id="address3"maxlength="254" />
+                                    <label id="lbladdress3" style="display:none;color:red;">
+                                        Invalid Address
+                                    </label>
+
+
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="column1">
+
+                                    <label for="town">* Town/City</label>
+                                </td>
+                                <td class="column2">
+                                    <input class="longLen" type="text" id="town"maxlength="28" required />
+                                    <label id="lbltown" style="display:none;color:red;">
+                                        Invalid City
+                                    </label>
+                                    <label id="reqtown" style="display:none;color:red;">
+                                        City Required
+                                    </label>
+
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="column1">
+
+                                    <label for="Region">&ensp; Region</label>
+                                </td>
+                                <td class="column2">
+                                    <input class="longLen" type="text" id="region" maxlength="45"/>
+                                    <label id="lblregion" style="display:none;color:red;">
+                                        Invalid Region
+                                    </label>
+
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="column1">
+
+                                    <label for="postcode">* Postcode/Zip code</label>
+                                </td>
+                                <td class="column2">
+                                    <input class="avgLen" type="text" id="postcode"maxlength="6" required />
+                                    <label id="lblpostcode" style="display:none;color:red;">
+                                        Invalid Post Code
+                                    </label>
+                                    <label id="reqpostcode" style="display:none;color:red;">
+                                        Post Code Required
+                                    </label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="column1">
+                                    <label for="country">* Country</label>
+                                </td>
+                                <td class="column2">
+                                    <select id="country" name="Country" required>
+                                        <option value="United Kingdom">United Kingdom</option>
+                                        <option value="India">India</option>
+                                        <option value="United States">United States</option>
+
+                                    </select>
+                                    <label id="reqcountry" style="display:none;color:red;">
+                                        Please select a country
+                                    </label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="column1">
+
+                                    <label for="telephone">&ensp; Telephone</label>
+                                </td>
+                                <td class="column2">
+                                    <input class="avgLen" type="text" id="telephone"maxlength="10" />
+                                    <label id="lbltelephone" style="display:none;color:red;">
+                                        Invalid Telephone Number
+                                    </label>
+
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="column1">
+
+                                    <label for="fax">&ensp; Fax</label>
+                                </td>
+                                <td class="column2">
+                                    <input class="avgLen" type="text" id="fax" />
+                                    <label id="lblfax" style="display:none;color:red;">
+                                        Invalid Fax
+                                    </label>
+
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="column1">
+
+                                    <label for="email">* Email address</label>
+                                </td>
+                                <td class="column2">
+                                    <input class="longLen" type="text" id="email" maxlength="254" required/>
+                                    <label id="lblemail" style="display:none;color:red;">
+                                        Invalid Email address
+                                    </label>
+                                    <label id="reqemail" style="display:none;color:red;">
+                                        Email address Requiured
+                                    </label>
+                                </td>
+                            </tr>
+                        </table>
+                        <table>
+                            <tr>
+                                <td width="140px;">
+                                    <p class="txt">
+                                        <input type="image" class="refresh" onclick="document.location='FlowerShop.html'" src="Images/Refresh.png" />
+                                        &nbsp;START AGAIN
+                                    </p>
+                                </td>
+                                <td class="finalcolumn2" style="text-align: right">
+                                    <button style="color:#223d7a;" type="button" onclick="validatePayment()" class="paybtn" >
+                                         MAKE PAYMENT<img src="Images/Payment.png" class="vertical"/>
+                                    </button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p class="txt">
+                                        <input type="image" class="vertical" onclick="document.location='FlowerShop.html'" src="Images/Cancel.png" />&nbsp;CANCEL
+                                    </p>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div>
+                        <img src="Images/Question.png" />
+                        <img src="Images/Question.png" class="question_image1" />
+                    </div>
+                </div>
+                <div class="line">
+                </div>
+                <table>
+                    <tr>
+                        <td class="txt">Refunds and Returns</td>
+                    </tr>
+                    <tr>
+                        <td class="txt">For more information visit our <u>Regards and Return Policy</u></td>
+                    </tr>
+                    <tr>
+                        <td>
+
+                            <img src="Images/WorldPay.png" style="height: 48px" />
+                        </td>
+                        <td class="txt">For help with your payment visit the <u>WorldPay Help .</u></td>
+                    </tr>
+                </table>
+            </div>
+
+        </form>
+        <div>
+            <footer id="footer">
+                <h2>Thank you for shopping at FlowerShop.Have a nice day</h2>
+            </footer>
+        </div>
+    </div>
+</body>
+</html>
